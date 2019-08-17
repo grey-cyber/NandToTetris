@@ -8,3 +8,6 @@
 |Nand to Nor|
 |Nand to Xnor|
 |Nand to Xor|
+|Nand to Multiplexer|
+|Nand to Demultiplexer|
+
