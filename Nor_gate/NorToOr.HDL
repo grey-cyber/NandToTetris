@@ -1,0 +1,9 @@
+CHIP NorToOr {
+	IN a,b;
+	OUT out;
+	PARTS:
+	Or(a=a,b=b,out=q);
+	Not(in=q,out=w);
+	Or(a=w,b=w,out=e);
+	Not(in=e,out=out);
+}

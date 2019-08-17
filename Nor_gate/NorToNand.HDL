@@ -1,0 +1,15 @@
+CHIP NorToNand {
+	IN a,b;
+	OUT out;
+	PARTS:
+	Or(a=a,b=a,out=q);
+	Not(in=q,out=w);
+	Or(a=b,b=b,out=f);
+	Not(in=f,out=e);
+	Or(a=w,b=e,out=r);
+	Not(in=r,out=t);
+	Or(a=t,b=t,out=y);
+	Not(in=y,out=u);
+}	
+	
+	

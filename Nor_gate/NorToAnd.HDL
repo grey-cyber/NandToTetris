@@ -1,0 +1,12 @@
+CHIP NorToAnd {
+	IN a,b;
+	OUT out;
+	PARTS:
+	Or(a=a,b=a,out=q);
+	Not(in=q,out=w);
+	Or(a=b,b=b,out=e);
+	Not(in=e,out=t);
+	Or(a=w,b=t,out=y);
+	Not(in=y,out=out);
+}
+	

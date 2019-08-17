@@ -1,0 +1,19 @@
+CHIP NorToXor {
+	IN a,b;
+	OUT out;
+	PARTS:
+	Or(a=a,b=a,out=q);
+	Not(in=q,out=w);
+	Or(a=b,b=b,out=e);
+	Not(in=e,out=r);
+	Or(a=a,b=b,out=t);
+	Not(in=t,out=y);
+	Or(a=w,b=r,out=u);
+	Not(in=u,out=i);
+	Or(a=y,b=i,out=o);
+	Not(in=o,out=p);
+}
+	
+	
+	
+	
