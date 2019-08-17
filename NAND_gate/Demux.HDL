@@ -1,0 +1,11 @@
+CHIP Demux {
+	IN a,s;
+	OUT z1,z2;
+	PARTS:
+	Nand(a=a,b=s,out=y1);
+	Nand(a=y1,b=y1,out=z1);
+	Nand(a=s,b=s,out=sbar);
+	Nand(a=a,b=sbar,out=y2);
+	Nand(a=y2,b=y2,out=z2);
+	
+}

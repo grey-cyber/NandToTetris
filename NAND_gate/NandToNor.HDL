@@ -1,0 +1,9 @@
+CHIP NandToNor {
+	IN a,b;
+	OUT out;
+	PARTS:
+	Nand(a=a,b=a,out=q);
+	Nand(a=b,b=b,out=w);
+	Nand(a=q,b=w,out=e);
+	Nand(a=e,b=e,out=out);
+}
